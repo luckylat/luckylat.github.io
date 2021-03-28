@@ -16,8 +16,8 @@ jobs:
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@2.0.0
-        with:
-          FTP_SERVER: ftp.luckyrat.fool.jp
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           LOCAL_DIR: public/
