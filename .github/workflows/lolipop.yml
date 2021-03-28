@@ -11,8 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2.3.2
 
-      - name: List output files
-        run : ls
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
